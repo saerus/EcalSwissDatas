@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "project": [
+      {
+        "title": "a",
+        "video": "",
+        "names": [
+          "aa",
+          "aaa",
+          "aaaa"
+        ]
+      },
+      {
+        "title": "b",
+        "video": "swiss_cows.mov",
+        "names": [
+          "bb",
+          "bbb",
+          "bbbb"
+        ]
+      }
+    ]
+  }
+}
