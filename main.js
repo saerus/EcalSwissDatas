@@ -6,7 +6,7 @@
 	$("content").append('<div class="element">'+item.title+'</div>');
 });
 });*/
-// SLICK
+// SLICK AAA
 $(function () {
 	$(".slicker").slick({
 		centerMode: false,
