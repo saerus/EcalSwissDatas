@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Rubik|Space+Mono');
 body {
 	font-family: 'Rubik', sans-serif;
@@ -13,6 +14,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	color: #da291c;
 }
+.slick-list, .slick-slide {
+	outline: none;
+}
 .gallery span {
 	padding-top: 2em;
 	width: 24%;
@@ -24,15 +28,17 @@ h1, h2, h3, h4, h5, h6 {
 .gallery span:last-child {
 	margin-right: 0px;
 }
-iframe::after {
+.element::before {
 	display: block;
-	position: relative;
-	width: 1000px;
-	height: 1000px;
-	background-color: red;
-	opacity: 0.5;
-	content: "sadbjhfbakhsjdbhjbhj";
-	z-index: 10000000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: " ";
+	cursor-event: none;
+	cursor: move;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: grab;
 }
 img {
 	width: 100%;
@@ -81,7 +87,6 @@ content {
 	border-right: 0px solid white;
 	position: relative;
 	pointer-events: initial;
-	position: relative;
 }
 .element .text {
 	position: absolute;
@@ -91,7 +96,6 @@ content {
 	padding: 0.6em;
 	z-index: 100;
 	bottom: -100%;
-	padding-top: 2.4em;
 	background-color: #222b;
 }
 .element .title {
