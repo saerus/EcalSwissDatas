@@ -16,11 +16,12 @@ $(function () {
 		touchThreshold: 20,
 		cssEase: "ease",
 		adaptiveHeight: false,
+		initialSlide: 1,
 		speed: 300,
 		infinite: false,
 	});
 	$(".slicker").on('afterChange', function() {
-		var c = $(this).slick("slickCurrentSlide")-1; // first doesn't have an iframe
+		var c = $(this).slick("slickCurrentSlide")-2; // 1 and 2 doesn't have an iframe
 		if(c>=0 && c <players.length) {
 		players[c].play();
 	}

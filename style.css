@@ -14,8 +14,16 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	color: #da291c;
 }
+a, a:hover, a:visited, a:link {
+	color: #da291c;
+}
 .slick-list, .slick-slide {
 	outline: none;
+}
+.context {
+	background-image: url("imgs/swiss_data_context.jpg");
+	background-position: center center;
+	background-size: cover;
 }
 .gallery span {
 	padding-top: 2em;
@@ -34,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	height: 100%;
 	content: " ";
-	cursor-event: none;
+	pointer-event: none;cursor
 	cursor: move;
 	cursor: -webkit-grab;
 	cursor: -moz-grab;
@@ -81,12 +89,12 @@ content {
 	box-sizing: border-box !important;
 	height: 100vh; // 100
 	width: 50vh;
-	opacity: 0.333333;
 	transition: 0.5s;
 	background-color: #222;
 	border-right: 0px solid white;
 	position: relative;
 	pointer-events: initial;
+	opacity: 0.3;
 }
 .element .text {
 	position: absolute;
@@ -96,7 +104,7 @@ content {
 	padding: 0.6em;
 	z-index: 100;
 	bottom: -100%;
-	background-color: #222b;
+	background-color: rgba(34, 34, 34, 0.8);
 }
 .element .title {
 	position: absolute;
